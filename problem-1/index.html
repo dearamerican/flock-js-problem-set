@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flock Problem 1</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/main.css">
+  </head>
+  <body>
+    <div class="to-do-list-container">
+      <h1 class="flex-item">To Do List</h1>
+      <table class="table table-striped flex-item" id="dynamicTable">
+        <!-- table rows dynamically generated based on to-do list in main.js -->
+      </table>
+      <br>
+      <form class="flex-item">
+        <div class="form-group">
+          <h2>Add To-Do Item</h2>
+          <br>
+          <label for="newToDoName">Name</label>
+          <input type="text" class="form-control" id="newToDoName"/>
+          <br>
+          <label for="newToDoTopic">Topic</label>
+          <select class="form-control" id="newToDoTopic">
+          <!-- options created in main.js -->
+          </select>
+          <br>
+          <!-- IRL, one should use a date picker form instead of a free text input. -->
+          <label for="newToDoDueDate">Due Date</label>
+          <input type="text" class="form-control" id="newToDoDueDate"/>
+        </div>
+        <button for="newToDoInput" type="submit" class="btn btn-primary">Add</button>
+      </form>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./scripts/main.js"> </script>
+  </body>
+</html>
